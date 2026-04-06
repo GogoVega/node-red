@@ -1,3 +1,35 @@
+#### 5.0.0-beta.4: Beta Release
+
+ - Various UX tweaks and tidy ups
+ - Renable click to close for edit dialog (#5567) @knolleary
+ - Improve the `user-select` CSS code usage (#5565) @bonanitech
+ - Tidy up modal shade appearance (#5566) @knolleary
+ - Scale highlight based on workspace zoom (#5563) @knolleary
+ - Ensure disabled tab has fully dashed border (#5564) @knolleary
+ - Add error handling for markdown parser (#5560) @knolleary
+ - Update reveal node styling (#5562) @knolleary
+ - Minor change to treeList select/expand behaviour (#5556) @knolleary
+ - Handle shift-scroll more robustly (#5559) @knolleary
+ - Remove obsolete vendor-prefixed CSS properties (#5554) @bonanitech
+ - Include sidebar width in position calculation for reveal function (#5555) @knolleary
+ - [5377] UX: Ensure menus handle vertical overflow (#5448) @n-lark
+ - Account for sidebar width when calculating zoom-to-fit scale (#5551) @knolleary
+ - Fix fade effect for tab labels that overflow (#5552) @bonanitech
+ - Better touch handling for submenus (#5550) @knolleary
+ - Improve workspace footer handling of smaller screen widths (#5549) @knolleary
+ - [5540] UX: handle node-red-dashboard css poisoning (#5548) @n-lark
+ - [5522] UX: vertical scrollbar should not overlap subflow toolbar (#5537) @n-lark
+ - [5523] UX: Cursor events in workspace get interrupted when over status/scroll bars (#5539) @n-lark
+ - [5521] UX: Selecting non-flow object in Explorer causes Info to go blank (#5538) @n-lark
+ - [5525] UX: Misaligned first tab (#5536) @n-lark
+ - Sync 4.1.7 to dev branch (#5531) @knolleary
+
+#### 5.0.0-beta.3: Beta Release
+
+ - UX updates for beta 3 (#5498) @knolleary
+ - Update Monaco to latest (0.55.1) (#5508) @Steve-Mcl
+ - Move location of new creds files to be next to flows (if they don't exist already in userdir) (#4951) @dceejay
+
 #### 5.0.0-beta.2: Beta Release
 
 Editor
@@ -32,6 +64,40 @@ Runtime
 Nodes
 
  - Add ability to use pfx or p12 file for TLS connection settings option (#4907) @dceejay
+
+#### 4.1.8: Maintenance Release
+
+ - Add badges to func node tabs with code in (#5585) @knolleary
+ - Fix typo in French link node description (#5530) @LPe7
+ - Encode branch name in delete request (#5584) @knolleary
+ - Introduce `show-first-tab` and `show-last-tab` actions (#5583) @GogoVega
+ - Fix "connected to ..." log string in tcp in/out nodes using TLS (#5484) @marcows
+ - TreeList: Fix arrow navigation through filtered TreeList (#5431) @piotrbogun
+ - Update tar dependency (#5582) @knolleary
+ - Allow Node-RED section of help sidebar to be hidden (#5581) @knolleary
+ - Allow theme plugin to override settings and add menu options (#5580) @knolleary
+
+#### 4.1.7: Maintenance Release
+
+ - Do not block touch events on ports (#5527) @knolleary
+ - Allow palette.categories to be set via theme plugin (#5526) @knolleary
+ - Bump i18next version (#5519) @knolleary
+ - Suppress i18n notice in frontend (#5528) @knolleary
+ - Set showSupportNotice option on i18n (#5520) @knolleary
+ - Do not cache subflow colors as each subflow can have its own (#5518) @knolleary
+ - Update tar/multer deps (#5515) @knolleary
+ - Remove IE7 CSS hacks (#5511) @bonanitech
+ 
+#### 4.1.6: Maintenance Release
+
+ - Allow palette.theme to be set via theme plugin and include icons (#5500) @knolleary
+ - Ensure config sidebar tooltip handles html content (#5501) @knolleary
+ - Allow node-red integrator access to available updates (#5499) @Steve-Mcl
+ - Add frontend pre and post debug message hooks (#5495) @Steve-Mcl
+ - Fix: allow middle-click panning over links and ports (#5496) @lklivingstone
+ - Support ctrl key to select configuration nodes (#5486) @kazuhitoyokoi
+ - Add § as shortcut meta-key (#5482) @gorenje
+ - Update dependencies (#5502) @knolleary
 
 #### 4.1.5: Maintenance Release
 
