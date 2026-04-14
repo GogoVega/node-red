@@ -206,7 +206,6 @@ module.exports = function(grunt) {
                     "packages/node_modules/@node-red/editor-client/src/js/ui/projects/projectSettings.js",
                     "packages/node_modules/@node-red/editor-client/src/js/ui/projects/projectUserSettings.js",
                     "packages/node_modules/@node-red/editor-client/src/js/ui/projects/tab-versionControl.js",
-                    "packages/node_modules/@node-red/editor-client/src/js/ui/touch/radialMenu.js",
                     "packages/node_modules/@node-red/editor-client/src/js/ui/tour/*.js"
                 ],
                 nonull: true,
