@@ -1,3 +1,24 @@
+#### 5.0.0-beta.5: Beta Release
+
+ - [5517] UX: Create default dark theme (#5625) @n-lark
+ - [5629] UX: Deploy menu: Restart Flows should not be faded (#5632) @n-lark
+ - Pull master changes to dev (#5631) @knolleary
+ - [5532] UX: Improve accessibility of default theme - colour palette (#5613) @n-lark
+ - [5616] Add back in expand/collapse tabs for sidenavs (#5626) @n-lark
+ - [5572] UX: Handle long instance title text (#5628) @n-lark
+ - [5621] UX: Fix styling of dragging sidebar panels (#5627) @n-lark
+ - Rework selected/hightlighted node appearance (#5623) @knolleary
+ - Ensure active tab is fully visible (#5624) @knolleary
+ - Rework sidebars to be draggable (#5618) @knolleary
+ - Make scrollbar hitbox larger (#5576) @knolleary
+ - [5617] Deploy Menu Redesign (#5619) @n-lark
+ - [5603] UX: Header buttons shown whilst editor loading (#5606) @n-lark
+ - [5602] UX: Unexpected tab border showing (#5607) @n-lark
+ - [5374] UX: replace touch radial menu with standard context menu (#5614) @n-lark
+ - [3431] feature: Store sidebar width between editor sessions (#5605) @n-lark
+ - Ensure edit dialog fills the tray (#5600) @knolleary
+ - Sync 4.1.8 to dev branch (#5587) @knolleary
+
 #### 5.0.0-beta.4: Beta Release
 
  - Various UX tweaks and tidy ups
