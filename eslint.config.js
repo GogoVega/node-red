@@ -14,7 +14,7 @@ module.exports = [
             "no-extend-native": "error",
             "no-irregular-whitespace": "error",
             "wrap-iife": ["error", "inside"],
-            "indent": ["warn", 4, { "SwitchCase": 1 }]
+            "indent": ["error", 4, { "SwitchCase": 1 }]
         }
     }
 ];
