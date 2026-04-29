@@ -188,15 +188,6 @@ const copy = [
         dest: EDITOR_PUBLIC
     },
     {
-        cwd: path.join(EDITOR_SRC, "icons"),
-        glob: "**",
-        dest: path.join(EDITOR_PUBLIC, "icons")
-    },
-    {
-        src: path.join(EDITOR_SRC, "index.html"),
-        dest: path.join(EDITOR_PUBLIC, "index.html")
-    },
-    {
         src: path.join(EDITOR_SRC, "favicon.ico"),
         dest: path.join(EDITOR_PUBLIC, "favicon.ico")
     },
