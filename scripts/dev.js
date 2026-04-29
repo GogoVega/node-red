@@ -33,7 +33,7 @@ function parseArgs(argv) {
     return out;
 }
 
-function debounce(fn, ms = 200) {
+function debounce(fn, ms = 300) {
     let timer = null;
     let pending = false;
     return () => {
@@ -56,6 +56,12 @@ function debounce(fn, ms = 200) {
     };
 }
 
+/**
+ * Watch a directory for file changes. Note that chokidar no longer supports globs or wildcards
+ * @param {*} label 
+ * @param {*} patterns 
+ * @param {*} handler 
+ */
 function watchPath(label, patterns, handler) {
     const onChange = debounce(async () => {
         console.log(`[watch:${label}] change detected`);
@@ -73,9 +79,9 @@ function startNodemon(scriptArgs) {
         script: "packages/node_modules/node-red/red.js",
         args: scriptArgs,
         ext: "js,html,json",
-        verbose: true,
+        verbose: false,
         watch: ["packages/node_modules"],
-        ignore: ["packages/node_modules/@node-red/editor-client/**"]
+        ignore: ["packages/node_modules/@node-red/editor-client/*"]
     });
     nodemon.on("log", (event) => {
         console.log(event.colour);
@@ -101,19 +107,19 @@ async function main() {
 
     watchPath(
         "js",
-        path.join(EDITOR_SRC, "js/**/*.js"),
+        path.join(EDITOR_SRC, "js"),
         async () => {
             await concat();
             await copy();
         }
     );
-    watchPath("sass", path.join(EDITOR_SRC, "sass/**/*.scss"), () => sass());
+    watchPath("sass", path.join(EDITOR_SRC, "sass"), () => sass());
     watchPath(
         "json",
         [
-            path.join(ROOT, "packages/node_modules/@node-red/nodes/locales/**/*.json"),
-            path.join(ROOT, "packages/node_modules/@node-red/editor-client/locales/**/*.json"),
-            path.join(ROOT, "packages/node_modules/@node-red/runtime/locales/**/*.json")
+            path.join(ROOT, "packages/node_modules/@node-red/nodes/locales"),
+            path.join(ROOT, "packages/node_modules/@node-red/editor-client/locales"),
+            path.join(ROOT, "packages/node_modules/@node-red/runtime/locales")
         ],
         () => jsonlint()
     );
@@ -125,7 +131,7 @@ async function main() {
             await copy();
         }
     );
-    watchPath("tours", path.join(EDITOR_SRC, "tours/**/*.js"), () => copy());
+    watchPath("tours", path.join(EDITOR_SRC, "tours"), () => copy());
     watchPath("misc", path.join(ROOT, "CHANGELOG.md"), () => copy());
 
     startNodemon(scriptArgs);
