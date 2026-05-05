@@ -1,3 +1,194 @@
+#### 5.0.0-beta.5: Beta Release
+
+ - [5517] UX: Create default dark theme (#5625) @n-lark
+ - [5629] UX: Deploy menu: Restart Flows should not be faded (#5632) @n-lark
+ - Pull master changes to dev (#5631) @knolleary
+ - [5532] UX: Improve accessibility of default theme - colour palette (#5613) @n-lark
+ - [5616] Add back in expand/collapse tabs for sidenavs (#5626) @n-lark
+ - [5572] UX: Handle long instance title text (#5628) @n-lark
+ - [5621] UX: Fix styling of dragging sidebar panels (#5627) @n-lark
+ - Rework selected/hightlighted node appearance (#5623) @knolleary
+ - Ensure active tab is fully visible (#5624) @knolleary
+ - Rework sidebars to be draggable (#5618) @knolleary
+ - Make scrollbar hitbox larger (#5576) @knolleary
+ - [5617] Deploy Menu Redesign (#5619) @n-lark
+ - [5603] UX: Header buttons shown whilst editor loading (#5606) @n-lark
+ - [5602] UX: Unexpected tab border showing (#5607) @n-lark
+ - [5374] UX: replace touch radial menu with standard context menu (#5614) @n-lark
+ - [3431] feature: Store sidebar width between editor sessions (#5605) @n-lark
+ - Ensure edit dialog fills the tray (#5600) @knolleary
+ - Sync 4.1.8 to dev branch (#5587) @knolleary
+
+#### 5.0.0-beta.4: Beta Release
+
+ - Various UX tweaks and tidy ups
+ - Renable click to close for edit dialog (#5567) @knolleary
+ - Improve the `user-select` CSS code usage (#5565) @bonanitech
+ - Tidy up modal shade appearance (#5566) @knolleary
+ - Scale highlight based on workspace zoom (#5563) @knolleary
+ - Ensure disabled tab has fully dashed border (#5564) @knolleary
+ - Add error handling for markdown parser (#5560) @knolleary
+ - Update reveal node styling (#5562) @knolleary
+ - Minor change to treeList select/expand behaviour (#5556) @knolleary
+ - Handle shift-scroll more robustly (#5559) @knolleary
+ - Remove obsolete vendor-prefixed CSS properties (#5554) @bonanitech
+ - Include sidebar width in position calculation for reveal function (#5555) @knolleary
+ - [5377] UX: Ensure menus handle vertical overflow (#5448) @n-lark
+ - Account for sidebar width when calculating zoom-to-fit scale (#5551) @knolleary
+ - Fix fade effect for tab labels that overflow (#5552) @bonanitech
+ - Better touch handling for submenus (#5550) @knolleary
+ - Improve workspace footer handling of smaller screen widths (#5549) @knolleary
+ - [5540] UX: handle node-red-dashboard css poisoning (#5548) @n-lark
+ - [5522] UX: vertical scrollbar should not overlap subflow toolbar (#5537) @n-lark
+ - [5523] UX: Cursor events in workspace get interrupted when over status/scroll bars (#5539) @n-lark
+ - [5521] UX: Selecting non-flow object in Explorer causes Info to go blank (#5538) @n-lark
+ - [5525] UX: Misaligned first tab (#5536) @n-lark
+ - Sync 4.1.7 to dev branch (#5531) @knolleary
+
+#### 5.0.0-beta.3: Beta Release
+
+ - UX updates for beta 3 (#5498) @knolleary
+ - Update Monaco to latest (0.55.1) (#5508) @Steve-Mcl
+ - Move location of new creds files to be next to flows (if they don't exist already in userdir) (#4951) @dceejay
+
+#### 5.0.0-beta.2: Beta Release
+
+Editor
+
+ - UX updates for next beta (#5444) @knolleary
+
+Nodes
+
+ - Add pause button to debug sidebar (#5390) @dceejay
+ - Add burst mode to delay node (#5391) @dceejay
+ - Add TLS certs/keys from Env Vars (#5376) @hardillb
+
+#### 5.0.0-beta.1: Beta Release
+
+Editor
+
+ - Allow sidebar to be split into two panels (#5378) @knolleary
+
+#### 5.0.0-beta.0: Beta Release
+
+Editor
+
+ - Update Sidebar UX (#5318) @knolleary
+ - Workspace pan/zoom updates (#5312) @knolleary
+ - Fix panning workspace on touchscreens (#5371) @knolleary
+ - Update tour for 5-beta (#5370) @knolleary
+
+Runtime
+
+ - Prep dev branch for beta releases (#5367) @knolleary
+
+Nodes
+
+ - Add ability to use pfx or p12 file for TLS connection settings option (#4907) @dceejay
+
+#### 4.1.8: Maintenance Release
+
+ - Add badges to func node tabs with code in (#5585) @knolleary
+ - Fix typo in French link node description (#5530) @LPe7
+ - Encode branch name in delete request (#5584) @knolleary
+ - Introduce `show-first-tab` and `show-last-tab` actions (#5583) @GogoVega
+ - Fix "connected to ..." log string in tcp in/out nodes using TLS (#5484) @marcows
+ - TreeList: Fix arrow navigation through filtered TreeList (#5431) @piotrbogun
+ - Update tar dependency (#5582) @knolleary
+ - Allow Node-RED section of help sidebar to be hidden (#5581) @knolleary
+ - Allow theme plugin to override settings and add menu options (#5580) @knolleary
+
+#### 4.1.7: Maintenance Release
+
+ - Do not block touch events on ports (#5527) @knolleary
+ - Allow palette.categories to be set via theme plugin (#5526) @knolleary
+ - Bump i18next version (#5519) @knolleary
+ - Suppress i18n notice in frontend (#5528) @knolleary
+ - Set showSupportNotice option on i18n (#5520) @knolleary
+ - Do not cache subflow colors as each subflow can have its own (#5518) @knolleary
+ - Update tar/multer deps (#5515) @knolleary
+ - Remove IE7 CSS hacks (#5511) @bonanitech
+ 
+#### 4.1.6: Maintenance Release
+
+ - Allow palette.theme to be set via theme plugin and include icons (#5500) @knolleary
+ - Ensure config sidebar tooltip handles html content (#5501) @knolleary
+ - Allow node-red integrator access to available updates (#5499) @Steve-Mcl
+ - Add frontend pre and post debug message hooks (#5495) @Steve-Mcl
+ - Fix: allow middle-click panning over links and ports (#5496) @lklivingstone
+ - Support ctrl key to select configuration nodes (#5486) @kazuhitoyokoi
+ - Add § as shortcut meta-key (#5482) @gorenje
+ - Update dependencies (#5502) @knolleary
+
+#### 4.1.5: Maintenance Release
+
+ - chore: bump tar to 7.5.7 (#5472) @bryopsida
+ - Update node-red-admin dependency @knolleary
+
+#### 4.1.4: Maintenance Release
+
+ - Update tar dependency @knolleary
+ - Revert overflow fix in editableList (#5467) @knolleary
+ - registry: fix importModule base dir for exports subpaths (#5465) @yuan-cloud
+ - fix: prevent race condition in localfilesystem context store during shutdown (#5462) @Dennis-SEG
+ - fix: prevent double resolve in node close callback (#5461) @Dennis-SEG
+ - fix: prevent incorrect array modification in delay node (#5457) @Dennis-SEG
+ - fix: prevent uncaught exceptions in core node event handlers (#5438) @Dennis-SEG
+
+#### 4.1.3: Maintenance Release
+
+Editor
+
+ - 5343/Editor/Bug: Node help tab resets focus when arrow keys are used to switch between nodes (#5406) @piotrbogun
+ - Ensure quick-add filter is applied properly when retriggering add (#5427) @knolleary
+ - TreeList: Fix widget treeList keyboard navigation scroll behavior (#5421) @piotrbogun
+ - Editor: Flow & subflow names are changed to all lowercase in search dialog #5348 (#5401) @n-lark
+ - Allow actions show-next-tab and previous to loop (#5355) @GogoVega
+ - 5404/Editor/Bug: Junction error in Quick Add dialog (#5407) @piotrbogun
+ - Add tooltip to delete button in node property UI (#5410) @kazuhitoyokoi
+ - Fix invalid node size in quick add dialog (#5403) @kazuhitoyokoi
+ - Expand folder to avoid error in library (#5399) @kazuhitoyokoi
+ - Stricter validator for flow file name in project feature (#5398) @kazuhitoyokoi
+ - Fix size and scrolling in Git config UI (#5396) @kazuhitoyokoi
+ - Reveal node in search results via mouseover (#5368) @gorenje
+
+Runtime
+
+ - Add package-lock.json for reproducible dependency chains (#5426) @dimitrieh
+ - Readme markdown refactor for legibility in IDE's (#5423) @dimitrieh
+ - Update body-parser (#5418) @knolleary
+
+Nodes
+
+ - fix(http-request): prevent uncaught exceptions in async hooks (#5392) @Dennis-SEG
+ - Fix flushing when in variable delay mode (#5382) @dceejay
+ - File node TypedInput width fix (#5425) @knolleary
+ - Use TextDecoder() to decode UTF-8 characters (#5416) @kazuhitoyokoi
+ - Support source information in complete node (#5414) @kazuhitoyokoi
+ - Fix status node to retrieve status from all nodes (#5412) @kazuhitoyokoi
+ - Decrement count of http requests after error (#5409) @kazuhitoyokoi
+ - Fix debug tab to copy displayed value (#5400) @kazuhitoyokoi
+
+#### 4.1.2: Maintenance Release
+
+Editor
+
+ - Fix invalid `dirty` state during redo after deployment (#5352) @GogoVega
+ - Fix up port event cancelling on node-select (#5338) @knolleary
+ - Add selection-to-subflow context menu item (#5337) @knolleary
+ - Show subflow input label on virtual port (#5325) @knolleary
+ - Clear suggestions on node/port mouse down (#5323) @knolleary
+ - Fix lock icon for read-only user (#5336) @knolleary
+ - Fix `RED.comms.subscribe` callback on error (#5313) @GogoVega
+
+Runtime
+
+ - ci: add files generated by npm test to .gitignore (#5230) @bryopsida
+ - Handle plugin name in `plugins.getConfig` (#5276) @GogoVega
+ - Update express version to 4.22.1 (#5365) @hardillb
+ - Improved readme (#5340) @dimitrieh
+ - Fix race condition in projects initialization by returning gitTools.init() promise (#5315) @stoprocent
+
 #### 4.1.1: Maintenance Release
 
 Editor

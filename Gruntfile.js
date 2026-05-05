@@ -173,6 +173,8 @@ module.exports = function(grunt) {
                     "packages/node_modules/@node-red/editor-client/src/js/ui/workspaces.js",
                     "packages/node_modules/@node-red/editor-client/src/js/ui/statusBar.js",
                     "packages/node_modules/@node-red/editor-client/src/js/ui/view.js",
+                    "packages/node_modules/@node-red/editor-client/src/js/ui/view-zoom-constants.js",
+                    "packages/node_modules/@node-red/editor-client/src/js/ui/view-zoom-animator.js",
                     "packages/node_modules/@node-red/editor-client/src/js/ui/view-annotations.js",
                     "packages/node_modules/@node-red/editor-client/src/js/ui/view-navigator.js",
                     "packages/node_modules/@node-red/editor-client/src/js/ui/view-tools.js",
@@ -204,7 +206,6 @@ module.exports = function(grunt) {
                     "packages/node_modules/@node-red/editor-client/src/js/ui/projects/projectSettings.js",
                     "packages/node_modules/@node-red/editor-client/src/js/ui/projects/projectUserSettings.js",
                     "packages/node_modules/@node-red/editor-client/src/js/ui/projects/tab-versionControl.js",
-                    "packages/node_modules/@node-red/editor-client/src/js/ui/touch/radialMenu.js",
                     "packages/node_modules/@node-red/editor-client/src/js/ui/tour/*.js"
                 ],
                 nonull: true,
@@ -226,8 +227,6 @@ module.exports = function(grunt) {
                             "node_modules/jquery-i18next/jquery-i18next.min.js",
                             "node_modules/jsonata/jsonata-es5.min.js",
                             "packages/node_modules/@node-red/editor-client/src/vendor/jsonata/formatter.js",
-                            "packages/node_modules/@node-red/editor-client/src/vendor/ace/ace.js",
-                            "packages/node_modules/@node-red/editor-client/src/vendor/ace/ext-language_tools.js"
                         ],
                         nonull: true,
                         dest: "packages/node_modules/@node-red/editor-client/public/vendor/vendor.js"
